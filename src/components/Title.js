@@ -10,7 +10,7 @@ import {
 } from 'react-native';
 import MenuItem from './MenuItem';
 
-export default class Footer extends React.Component{
+export default class Title extends React.Component{
   constructor(props){
       super(props);
   }
@@ -21,22 +21,10 @@ export default class Footer extends React.Component{
 
   render() {
     return(
-      <View style={styles.footerContainer}>
-        <View style={styles.info}>
-          <FlatList
-            data={[
-             {key: '• Calle 28N #5N - 14 Barrio San Vicente'},
-             {key: '• Cali - Colombia'},
-             {key: '• Tel: (032) 668-5003 | Cel: (310) 494-2518'},
-             {key: '• servicioalcliente@macsoporte.com'},
-            ]}
-            renderItem={({item}) => <Text style={styles.item}>{item.key}</Text>}
-          />
-        </View>
+      <View style={styles.titleContainer}>
         <View style={styles.logo}>
-          <Image source= {require('../img/Logo.png')} style={styles.cart} />
+          <Image source= {require('../img/Imagotipo.png')} style={styles.cart} />
         </View>
-
       </View>
     )
   }
@@ -44,7 +32,7 @@ export default class Footer extends React.Component{
 
 //Estilos
 const styles = StyleSheet.create({
-  footerContainer:{
+  titleContainer:{
     flex:1,
     justifyContent:'center',
     width:'100%',
@@ -110,4 +98,4 @@ const styles = StyleSheet.create({
 })
 
 //Exportar el modulo
-module.exports = Footer;
+module.exports = Title;

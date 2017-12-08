@@ -5,6 +5,7 @@ import BannerInPages from '../components/BannerInPages';
 import ImageOverlay from '../components/ImageOverlay';
 import MenuItem from '../components/MenuItem';
 import Footer from '../components/Footer';
+import Title from '../components/Title';
 
 export default class Frutas extends React.Component{
   constructor(props){

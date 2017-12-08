@@ -4,7 +4,9 @@ import {
   StyleSheet,Text,
   View,Image,ScrollView,
 } from 'react-native';
-
+import BannerInPages from '../components/BannerInPages';
+import ImageOverlay from '../components/ImageOverlay';
+import Footer from '../components/Footer';
 export default class Agencias extends React.Component{
   constructor(props){
       super(props);
