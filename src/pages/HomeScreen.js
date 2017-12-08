@@ -25,13 +25,13 @@ export default class HomeScreen extends React.Component<{}> {
           <View style={styles.contentContainer}>
             <View style={styles.col2}>
             <TouchableOpacity
-              onPress={() => this.props.navigation.navigate('Frutas', { user: 'Frutas' })}>
+              onPress={() => this.props.navigation.navigate('Frutas', { user: 'Noticias' })}>
                 <CustomImage imageSource={require('../img/F3.jpg')}  header='Frutas'/>
             </TouchableOpacity>
             </View>
             <View style={styles.col1}>
             <TouchableOpacity
-              onPress={() => this.props.navigation.navigate('Agencias', { user: 'Agencias' })}>
+              onPress={() => this.props.navigation.navigate('Agencias', { user: 'Soporte Tecnico' })}>
               <CustomImage imageSource={require('../img/F5.jpg')} header='Agencias'/>
             </TouchableOpacity>
             </View>
@@ -39,7 +39,7 @@ export default class HomeScreen extends React.Component<{}> {
             </View>
             <View style={styles.col1}>
             <TouchableOpacity
-              onPress={() => this.props.navigation.navigate('Recetas', { user: 'Recetas' })}>
+              onPress={() => this.props.navigation.navigate('Recetas', { user: 'Productos' })}>
                 <CustomImage imageSource={require('../img/smootie.jpg')} header='Recetas'/>
             </TouchableOpacity>
             </View>
@@ -53,13 +53,30 @@ export default class HomeScreen extends React.Component<{}> {
             </View>
             <View style={styles.col2}>
             <TouchableOpacity
-              onPress={() => this.props.navigation.navigate('Contacto', { user: 'Escribenos' })}>
+              onPress={() => this.props.navigation.navigate('Contacto', { user: 'Contactanos' })}>
               <CustomImage imageSource={require('../img/F1.jpg')} header='Escribenos'/>
             </TouchableOpacity>
             </View>
             <View style={styles.col1}>
             <TouchableOpacity
-              onPress={() => this.props.navigation.navigate('Inicio', { user: 'Contacto' })}>
+              onPress={() => this.props.navigation.navigate('Inicio', { user: 'Servicios' })}>
+              <CustomImage imageSource={require('../img/F6.jpg')} header='Contacto'/>
+            </TouchableOpacity>
+            </View>
+            <View style={styles.contentBanner}>
+              <Footer/>
+            </View>
+            <View style={styles.contentBanner}>
+            </View>
+            <View style={styles.col1}>
+            <TouchableOpacity
+              onPress={() => this.props.navigation.navigate('Contacto', { user: 'Otros Servicios' })}>
+              <CustomImage imageSource={require('../img/F1.jpg')} header='Escribenos'/>
+            </TouchableOpacity>
+            </View>
+            <View style={styles.col2}>
+            <TouchableOpacity
+              onPress={() => this.props.navigation.navigate('Inicio', { user: 'Preguntas Frecuentes' })}>
               <CustomImage imageSource={require('../img/F6.jpg')} header='Contacto'/>
             </TouchableOpacity>
             </View>

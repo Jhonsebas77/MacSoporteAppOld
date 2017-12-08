@@ -7,7 +7,7 @@ export default class Banner extends React.Component<{}> {
     return (
         <ImageBackground source= {require('../img/main_img_1.jpg')}
                 style={styles.banner} >
-          <ImageOverlay header='- Fruticola de Colombia - ' paragraph= 'Representantes #1 de Dole Chile' />
+          <ImageOverlay header='- Mac Soporte - ' paragraph= 'Servicio Tecnico Especializado' />
         </ImageBackground>
     );
   }

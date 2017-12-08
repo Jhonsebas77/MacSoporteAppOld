@@ -4,8 +4,7 @@ import {
   StyleSheet,Text,
   View,Image,TextInput,Button,Alert,KeyboardAvoidingView,
 } from 'react-native';
-import BannerInPages from '../components/BannerInPages';
-import ImageOverlay from '../components/ImageOverlay';
+
 export default class Contacto extends React.Component{
   constructor(props){
       super(props);
