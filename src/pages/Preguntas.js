@@ -21,7 +21,7 @@ export default class Agencias extends React.Component{
       <ScrollView style={styles.container}>
         <Text style={styles.header}>Nuestras Agencias en Colombia</Text>
           <View style={styles.containerImage}>
-            <Image source= {require('../img/Mapa.jpg') } resizeMode='center'/>
+            <Image source= {require('../img/noticias.jpg') } resizeMode='center'/>
           </View>
         <Footer/>
       </ScrollView>

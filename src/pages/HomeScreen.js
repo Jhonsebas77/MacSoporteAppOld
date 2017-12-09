@@ -4,12 +4,14 @@ import { StackNavigator } from 'react-navigation';
 import Banner from '../components/Banner';
 import CustomImage from '../components/CustomImage';
 import Footer from '../components/Footer';
-import Inicio from './Inicio';
-import Frutas from './Frutas';
-import Recetas from './Recetas';
-import Fruticola from './Fruticola';
-import Agencias from './Agencias';
+import Soporte from './Soporte';
+import Noticias from './Noticias';
+import Productos from './Productos';
+import Nosotros from './Nosotros';
 import Contacto from './Contacto';
+import Servicios from './Servicios';
+import Preprensa from './Otros';
+import Preguntas from './Preguntas';
 
 export default class HomeScreen extends React.Component<{}> {
   static navigationOptions = {
@@ -25,28 +27,28 @@ export default class HomeScreen extends React.Component<{}> {
           <View style={styles.contentContainer}>
             <View style={styles.col2}>
             <TouchableOpacity
-              onPress={() => this.props.navigation.navigate('Frutas', { user: 'Soporte Tecnico' })}>
-                <CustomImage imageSource={require('../img/F3.jpg')}  header='Soporte Tecnico'/>
+              onPress={() => this.props.navigation.navigate('Soporte', { user: 'Soporte Tecnico' })}>
+                <CustomImage imageSource={require('../img/soporte.jpg')}  header='Soporte Tecnico'/>
             </TouchableOpacity>
             </View>
             <View style={styles.col1}>
             <TouchableOpacity
-              onPress={() => this.props.navigation.navigate('Agencias', { user: 'Noticias' })}>
-              <CustomImage imageSource={require('../img/F5.jpg')} header='Noticias'/>
+              onPress={() => this.props.navigation.navigate('Noticias', { user: 'Noticias' })}>
+              <CustomImage imageSource={require('../img/noticias.jpg')} header='Noticias'/>
             </TouchableOpacity>
             </View>
             <View style={styles.contentBanner}>
             </View>
             <View style={styles.col1}>
             <TouchableOpacity
-              onPress={() => this.props.navigation.navigate('Recetas', { user: 'Productos' })}>
-                <CustomImage imageSource={require('../img/smootie.jpg')} header='Productos'/>
+              onPress={() => this.props.navigation.navigate('Productos', { user: 'Productos' })}>
+                <CustomImage imageSource={require('../img/productos.jpg')} header='Productos'/>
             </TouchableOpacity>
             </View>
             <View style={styles.col2}>
               <TouchableOpacity
-                onPress={() => this.props.navigation.navigate('Fruticola', { user: 'Nosotros' })}>
-                <CustomImage imageSource={require('../img/F2.jpg')} header='Nosotros' />
+                onPress={() => this.props.navigation.navigate('Nosotros', { user: 'Nosotros' })}>
+                <CustomImage imageSource={require('../img/nosotros.png')} header='Nosotros' />
               </TouchableOpacity>
             </View>
             <View style={styles.contentBanner}>
@@ -54,27 +56,27 @@ export default class HomeScreen extends React.Component<{}> {
             <View style={styles.col2}>
             <TouchableOpacity
               onPress={() => this.props.navigation.navigate('Contacto', { user: 'Contactanos' })}>
-              <CustomImage imageSource={require('../img/F1.jpg')} header='Contactanos'/>
+              <CustomImage imageSource={require('../img/contactanos.jpg')} header='Contactanos'/>
             </TouchableOpacity>
             </View>
             <View style={styles.col1}>
             <TouchableOpacity
-              onPress={() => this.props.navigation.navigate('Inicio', { user: 'Servicios' })}>
-              <CustomImage imageSource={require('../img/F6.jpg')} header='Servicios'/>
+              onPress={() => this.props.navigation.navigate('Servicios', { user: 'Servicios' })}>
+              <CustomImage imageSource={require('../img/servicios.jpg')} header='Servicios'/>
             </TouchableOpacity>
             </View>
             <View style={styles.contentBanner}>
             </View>
             <View style={styles.col1}>
             <TouchableOpacity
-              onPress={() => this.props.navigation.navigate('Contacto', { user: 'Pre-Prensa' })}>
-              <CustomImage imageSource={require('../img/F1.jpg')} header='Pre-Prensa'/>
+              onPress={() => this.props.navigation.navigate('Preprensa', { user: 'Pre-Prensa' })}>
+              <CustomImage imageSource={require('../img/preprensa.jpg')} header='Pre-Prensa'/>
             </TouchableOpacity>
             </View>
             <View style={styles.col2}>
             <TouchableOpacity
-              onPress={() => this.props.navigation.navigate('Inicio', { user: 'Preguntas Frecuentes' })}>
-              <CustomImage imageSource={require('../img/F6.jpg')} header='Preguntas Frecuentes'/>
+              onPress={() => this.props.navigation.navigate('Preguntas', { user: 'Preguntas Frecuentes' })}>
+              <CustomImage imageSource={require('../img/preguntas.jpg')} header='Preguntas Frecuentes'/>
             </TouchableOpacity>
             </View>
             <View style={styles.contentBanner}>

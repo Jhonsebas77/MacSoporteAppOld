@@ -5,7 +5,7 @@ import ImageOverlay from './ImageOverlay';
 export default class Banner extends React.Component<{}> {
   render() {
     return (
-        <ImageBackground source= {require('../img/main_img_1.jpg')}
+        <ImageBackground source= {require('../img/Header.jpg')}
                 style={styles.banner} >
           <ImageOverlay header='- Mac Soporte - ' paragraph= 'Servicio Tecnico Especializado' />
         </ImageBackground>

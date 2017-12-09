@@ -2,28 +2,28 @@ import React, { Component } from 'react';
 import {
   StackNavigator,
 } from 'react-navigation';
-import Frutas from './src/pages/Frutas';
-import Inicio from './src/pages/Inicio';
-import Recetas from './src/pages/Recetas';
-import Fruticola from './src/pages/Fruticola';
-import Agencias from './src/pages/Agencias';
-import Contacto from './src/pages/Contacto';
 import HomeScreen from './src/pages/HomeScreen';
-import Certificados from './src/pages/Certificados';
-import Portafolio from './src/pages/Portafolio';
-import Politica from './src/pages/Politica';
+import Soporte from './src/pages/Soporte';
+import Noticias from './src/pages/Noticias';
+import Productos from './src/pages/Productos';
+import Nosotros from './src/pages/Nosotros';
+import Contacto from './src/pages/Contacto';
+import Servicios from './src/pages/Servicios';
+import Preprensa from './src/pages/Otros';
+import Preguntas from './src/pages/Preguntas';
+import Garantia from './src/pages/Garantia';
 
 const HomeScreenMain = StackNavigator({
   Home: { screen: HomeScreen },
-  Inicio: { screen: Inicio },
-  Frutas: { screen: Frutas },
-  Recetas: { screen: Recetas },
-  Fruticola: { screen: Fruticola },
-  Agencias: { screen: Agencias },
+  Soporte: { screen: Soporte },
+  Noticias: { screen: Noticias },
+  Productos: { screen: Productos },
+  Nosotros: { screen: Nosotros },
   Contacto: { screen: Contacto },
-  Certificados: { screen: Certificados },
-  Politica: { screen: Politica },
-  Portafolio: { screen: Portafolio },
+  Servicios: { screen: Servicios },
+  Preprensa: { screen: Preprensa },
+  Preguntas: { screen: Preguntas },
+  Garantia: { screen: Garantia },
 });
 export default class App extends React.Component<{}> {
   constructor(props){

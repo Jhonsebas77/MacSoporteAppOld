@@ -1,9 +1,10 @@
 'use stric'
 import React, { Component } from 'react';
 import {
-  StyleSheet,Text,
-  View,Image,TextInput,Button,Alert,KeyboardAvoidingView,
+  StyleSheet,Text,ScrollView,
+  View,FlatList,Image,TextInput,Button,Alert,KeyboardAvoidingView,
 } from 'react-native';
+import Footer from '../components/Footer';
 
 export default class Contacto extends React.Component{
   constructor(props){
@@ -16,45 +17,80 @@ export default class Contacto extends React.Component{
   render() {
      const { params } = this.props.navigation.state;
     return(
-      <KeyboardAvoidingView behavior="padding">
-        <Text style={styles.header}>Déjanos un mensaje</Text>
+      // <KeyboardAvoidingView behavior="position">
+      <ScrollView>
+        <Text style={styles.header}>Formulario de contacto</Text>
+        <Text> Preguntas, comentarios o inquietudes? por favor
+              llenar el siguiente formulario. Nos pondremos en
+              contacto con usted tan pronto como nos sea posible.
+        </Text>
         <View style={styles.container}>
-            <View>
+          <View>
+              <Text>Nombre Completo</Text>
               <TextInput
-                placeholder="Nombre"
-                returnKeyType="next"
-                onSubmitEditing={()=>this.passwordInput.focus()}
-                autoCapitalize="none"
-                autoCorrect={false}
-                style={styles.input}/>
-              <TextInput
-                placeholder="E-Mail"
-                keyboardType="email-address"
-                returnKeyType="next"
-                ref= {(input) => this.passwordInput=input}
-                style={styles.input}/>
-              <TextInput
-                placeholder="Telefono"
-                secureTextEntry
-                returnKeyType="next"
-                keyboardType="phone-pad"
-                ref= {(input) => this.passwordInput=input}
-                style={styles.input}/>
-              <TextInput
-                placeholder="Dejanos tu mensaje"
-                returnKeyType="go"
-                multiline = {true}
-                numberOfLines = {4}
-                ref= {(input) => this.passwordInput=input}
-                style={styles.input}/>
-              <Button
-                style={styles.buttonContainer}
-                title="Enviar Mensaje"
-                onPress={()=> alert( "Mensaje Enviado!")}
-               />
-          </View>
+              placeholder="Nombre Completo"
+              returnKeyType="next"
+              onSubmitEditing={()=>this.passwordInput.focus()}
+              autoCapitalize="none"
+              autoCorrect={false}
+              style={styles.input}/>
+              <View>
+                <Text>Email</Text>
+                <TextInput
+                  placeholder="Ingrese su correo electronico"
+                  keyboardType="email-address"
+                  returnKeyType="next"
+                  ref= {(input) => this.passwordInput=input}
+                  style={styles.input}/>
+                <Text>Teléfono</Text>
+                <TextInput
+                  placeholder="Teléfono"
+                  secureTextEntry
+                  returnKeyType="next"
+                  keyboardType="phone-pad"
+                  ref= {(input) => this.passwordInput=input}
+                  style={styles.input}/>
+              </View>
+              <View>
+                <Text>Dispositivo</Text>
+                <TextInput
+                  placeholder="Dispositivo"
+                  keyboardType="email-address"
+                  returnKeyType="next"
+                  ref= {(input) => this.passwordInput=input}
+                  style={styles.input}/>
+                <Text>Daño</Text>
+                <TextInput
+                  placeholder="Tipo de daño"
+                  secureTextEntry
+                  returnKeyType="next"
+                  keyboardType="phone-pad"
+                  ref= {(input) => this.passwordInput=input}
+                  style={styles.input}/>
+              </View>
+              <Text>Dejanos tu Mensaje</Text>
+            <TextInput
+              placeholder="Dejanos tu mensaje"
+              returnKeyType="go"
+              multiline = {true}
+              numberOfLines = {4}
+              ref= {(input) => this.passwordInput=input}
+              style={styles.input}/>
+            <Button
+              style={styles.buttonContainer}
+              title="Enviar Mensaje"
+              onPress={()=> alert( "Mensaje Enviado!")}
+             />
+             <Button
+               style={styles.buttonContainer}
+               title="Donde estamos?"
+               onPress={()=> alert( "Abre Google Maps")}
+              />
         </View>
-      </KeyboardAvoidingView>
+        </View>
+          <Footer/>
+        </ScrollView>
+      // </KeyboardAvoidingView>
     )
   }
 }

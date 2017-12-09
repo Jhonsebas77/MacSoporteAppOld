@@ -17,7 +17,7 @@ export default class BannerInPages extends React.Component<{}> {
     : null;
     return (
       <View>
-        <ImageBackground source= {require('../img/main_img_1.jpg')} style={styles.banner}>
+        <ImageBackground source= {require('../img/bn_Soporte.jpg')} style={styles.banner}>
           {header}
           {paragraph}
         </ImageBackground>
