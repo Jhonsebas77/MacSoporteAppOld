@@ -5,7 +5,6 @@ import {
   View,ImageBackground,ScrollView,TouchableOpacity,
 } from 'react-native';
 import { Card } from 'react-native-elements';
-import BannerInPages from '../components/BannerInPages';
 import ImageOverlay from '../components/ImageOverlay';
 import Footer from '../components/Footer';
 
@@ -89,7 +88,7 @@ export default class Agencias extends React.Component{
               renderItem={({item}) => <Text style={styles.item}>{item.key}</Text>}
             />
           </Card>
-          <Footer style={{padding:5}}/>
+          <Footer/>
       </ScrollView>
 
     )
