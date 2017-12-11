@@ -7,6 +7,7 @@ import {
 import { Card } from 'react-native-elements';
 import BannerInPages from '../components/BannerInPages';
 import ImageOverlay from '../components/ImageOverlay';
+import Footer from '../components/Footer';
 
 export default class Noticias extends React.Component{
   constructor(props){

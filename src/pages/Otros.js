@@ -1,9 +1,10 @@
 'use stric'
 import React, { Component } from 'react';
 import {
-  StyleSheet,Text,
+  StyleSheet,Text,ImageBackground,
   View,Image,ScrollView,
 } from 'react-native';
+import { Card } from 'react-native-elements';
 import BannerInPages from '../components/BannerInPages';
 import ImageOverlay from '../components/ImageOverlay';
 import Footer from '../components/Footer';
@@ -19,10 +20,15 @@ export default class Agencias extends React.Component{
      const { params } = this.props.navigation.state;
     return(
       <ScrollView style={styles.container}>
-        <Text style={styles.header}>Nuestras Agencias en Colombia</Text>
-          <View style={styles.containerImage}>
-            <Image source= {require('../img/noticias.jpg') } resizeMode='center'/>
-          </View>
+      <ImageBackground source= {require('../img/bn_Soporte.jpg')} style={styles.banner} >
+        <ImageOverlay header='Otros Servicios'/>
+      </ImageBackground>
+
+<Card title="No todo es MAC">
+        <Text>En Mac Soporte tambien contamos con el apoyo del Ingeniero Julian Otalora, especializado en mantenimiento de
+          equipos de prepensa como CTPs, Dolev y Filmadoras, si deseas solicitar su servico, escribenos o contactate con nosotros!
+        </Text>
+        </Card>
         <Footer/>
       </ScrollView>
     )
@@ -46,6 +52,12 @@ const styles = StyleSheet.create({
     padding:10,
     color:'#FF0000',
     backgroundColor:'#fff'
+  },
+  banner: {
+    width:'100%',
+    alignItems:'center',
+    justifyContent:'center',
+    height:120,
   },
 
 })
