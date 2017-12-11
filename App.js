@@ -12,6 +12,7 @@ import Servicios from './src/pages/Servicios';
 import Preprensa from './src/pages/Otros';
 import Preguntas from './src/pages/Preguntas';
 import Garantia from './src/pages/Garantia';
+import Mapa from './src/pages/Mapa';
 
 const HomeScreenMain = StackNavigator({
   Home: { screen: HomeScreen },
@@ -24,6 +25,7 @@ const HomeScreenMain = StackNavigator({
   Preprensa: { screen: Preprensa },
   Preguntas: { screen: Preguntas },
   Garantia: { screen: Garantia },
+  Mapa: { screen: Mapa },
 });
 export default class App extends React.Component<{}> {
   constructor(props){

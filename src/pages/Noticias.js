@@ -15,15 +15,14 @@ export default class Noticias extends React.Component{
   }
   static navigationOptions = ({ navigation }) => ({
      title: ` ${navigation.state.params.user}`,
-     headerTintColor: '#a8cf45',
+     headerTintColor: '#3898EC',
    });
   render() {
      const { params } = this.props.navigation.state;
     return(
       <ScrollView style={styles.container}>
         <Text style={styles.header}>Actualidad en el mundo de Apple</Text>
-        <Card  style={styles.cardContainer}>
-          <Text style={styles.title}>Noticia1</Text>
+        <Card title="Noticia 1" style={styles.cardContainer}>
           <Text style={styles.body}>
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
             commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus
@@ -35,8 +34,7 @@ export default class Noticias extends React.Component{
             nisi. Aenean vulputate eleifend
           </Text>
         </Card>
-        <Card  style={styles.cardContainer}>
-          <Text style={styles.title}>Noticia2</Text>
+        <Card  title="Noticia 2" style={styles.cardContainer}>
           <Text style={styles.body}>
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
             commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus
@@ -55,38 +53,23 @@ export default class Noticias extends React.Component{
 }
 
 const styles = StyleSheet.create({
-  containerImage: {
-    alignItems: 'center',
-    justifyContent: 'center',
-    flexWrap:'wrap',
-    flexDirection: 'row',
-    backgroundColor: '#fff',
-  },
   container: {
     flex: 1,
   },
   cardContainer: {
     padding:5,
   },
-  title: {
-    fontSize:24,
-    textAlign:'center',
-    padding:10,
-    color:'#FF0000',
-    backgroundColor:'#fff'
-  },
   body: {
     fontSize:16,
     textAlign:'left',
     padding:5,
-    color:'#FF0000',
     backgroundColor:'#fff'
   },
   header: {
     fontSize:28,
-    textAlign:'left',
+    textAlign:'center',
     padding:10,
-    color:'#FF0000',
+    color:'#3898EC',
     backgroundColor:'#fff'
   },
 

@@ -59,7 +59,7 @@ export default class Agencias extends React.Component{
                 <TouchableOpacity
                   style={styles.buttonService}
                   onPress={() => this.props.navigation.navigate('Garantia', { user: 'Garantia Dispositivo' })}>
-                    <Text>Solicitar una cita</Text>
+                    <Text style={{color:'#fff'}}>Solicitar una cita</Text>
                 </TouchableOpacity>
               </View>
             <Text>
@@ -69,7 +69,7 @@ export default class Agencias extends React.Component{
               <TouchableOpacity
                 style={styles.buttonService}
                 onPress={() => this.props.navigation.navigate('Garantia', { user: 'Garantia Dispositivo' })}>
-                  <Text>Verificar Garantia</Text>
+                  <Text style={{color:'#fff'}}>Verificar Garantia</Text>
               </TouchableOpacity>
             </View>
           </Card>

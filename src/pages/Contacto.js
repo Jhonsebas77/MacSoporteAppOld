@@ -2,10 +2,11 @@
 import React, { Component } from 'react';
 import {
   StyleSheet,Text,ScrollView,
-  View,FlatList,Image,TextInput,Button,Alert,KeyboardAvoidingView,
+  View,FlatList,Image,TextInput,TouchableOpacity,Alert,KeyboardAvoidingView,
 } from 'react-native';
 import { Card,FormLabel,FormInput } from 'react-native-elements';
 import Footer from '../components/Footer';
+import Mapa from './Mapa';
 
 export default class Contacto extends React.Component{
   constructor(props){
@@ -74,16 +75,19 @@ export default class Contacto extends React.Component{
                      placeholder='Dejanos tu mensaje'
                      placeholderTextColor='blue'>
                     </TextInput>
-               <Button
-                 style={styles.buttonContainer}
-                 title="Enviar Mensaje"
-                 onPress={()=> alert( "Abre Google Maps")}
-                />
-                <Button
-                  style={styles.buttonContainer}
-                  title="Donde Estamos?"
-                  onPress={()=> alert( "Abre Google Maps")}
-                 />
+
+            </View>
+            <View style={styles.container}>
+            <TouchableOpacity
+              style={styles.buttonContainer}
+               onPress={()=> alert( "Mensaje Enviado")}>
+                <Text style={{color:'#fff'}}>Enviar Mensaje</Text>
+            </TouchableOpacity>
+            <TouchableOpacity
+              style={styles.buttonContainer}
+                 onPress={() => this.props.navigation.navigate('Mapa', { user: 'Donde Estamos?' })}>
+                <Text style={{color:'#fff'}}>Donde Estamos?</Text>
+            </TouchableOpacity>
             </View>
           </Card>
           <Footer/>
@@ -97,7 +101,8 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
-    padding:30
+    padding:30,
+    flex: 1, flexDirection: 'row',
   },
   formcontainer: {
     width:'100%',
@@ -115,7 +120,8 @@ const styles = StyleSheet.create({
     marginTop: 10,
     marginBottom: 10,
     borderRadius:8,
-    borderWidth:1
+    borderWidth:1,
+    padding:5,
   },
   divform: {
     flexDirection:'row',
@@ -141,8 +147,15 @@ fontWeight:'bold',
     backgroundColor: 'rgba(11,7,16,0.2)',
   },
   buttonContainer: {
-    backgroundColor: 'rgba(255,255,255,0.2)',
-    paddingVertical:15
+    backgroundColor: '#3898EC',
+    alignItems: 'center',
+    justifyContent: 'center',
+    borderRadius: 10,
+    width: 240,
+    height: 40,
+    paddingTop:5,
+    paddingLeft:5,
+    paddingVertical:5,
   },
   header: {
     fontSize:28,

@@ -40,24 +40,24 @@ export default class Productos extends React.Component{
             <View style={styles.scrollContainer}>
               <View style={styles.menuContainer}>
                 <View style={styles.priceContainer}>
-                  <Itemtosell sellImage={require('../img/noticias.jpg')} descripcion='Cable USB - Ligthing' disponible='Disponible: 4' precio='$60.000'/>
+                  <Itemtosell sellImage={require('../img/MD818.jpg')} descripcion='Cable USB - Ligthing' disponible='Disponible: 4' precio='$60.000'/>
                 </View>
                 <View style={styles.priceContainer}>
-                  <Itemtosell sellImage={require('../img/noticias.jpg')} descripcion='Cargador 5w' disponible='Disponible: 3' precio='$30.000'/>
+                  <Itemtosell sellImage={require('../img/MLA02.jpg')} descripcion='Magic Mouse 2' disponible='Disponible: 1' precio='$200.000'/>
                 </View>
                 <View style={styles.priceContainer}>
-                  <Itemtosell sellImage={require('../img/noticias.jpg')} descripcion='Cargador 60w MagSafe 1' extra='(Usado)' disponible='Disponible: 1' precio='$200.000'/>
+                  <Itemtosell sellImage={require('../img/MD565.jpg')} descripcion='Cargador 60w MagSafe 1' extra='(Usado)' disponible='Disponible: 1' precio='$200.000'/>
                 </View>
               </View>
               <View style={styles.menuContainer}>
                 <View style={styles.priceContainer}>
-                  <Itemtosell sellImage={require('../img/noticias.jpg')} descripcion='Protector de Teclado' extra='Ingles Mid 2012' disponible='Disponible: 4' precio='$50.000'/>
+                  <Itemtosell sellImage={require('../img/MD8984.jpg')} descripcion='Protector de Teclado' extra='Ingles Mid 2012' disponible='Disponible: 4' precio='$50.000'/>
                 </View>
                 <View style={styles.priceContainer}>
-                  <Itemtosell sellImage={require('../img/noticias.jpg')} descripcion='iMac 24 Mid 2009' disponible='Disponible: 1' extra='4GB Ram - 512GB HDD' precio='$800.000'/>
+                  <Itemtosell sellImage={require('../img/MD4446.jpg')} descripcion='iMac 24 Mid 2009' disponible='Disponible: 1' extra='4GB Ram - 512GB HDD' precio='$800.000'/>
                 </View>
                 <View style={styles.priceContainer}>
-                  <Itemtosell sellImage={require('../img/noticias.jpg')} descripcion='Memoria RAM' extra='4GB DRR3 1600' disponible='Disponible: 4' precio='$320.000'/>
+                  <Itemtosell sellImage={require('../img/MD1544.jpg')} descripcion='Memoria RAM' extra='4GB DRR3 1600' disponible='Disponible: 4' precio='$320.000'/>
                 </View>
               </View>
 

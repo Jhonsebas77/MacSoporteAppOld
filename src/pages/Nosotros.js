@@ -1,6 +1,7 @@
 'use stric'
 import React, { Component } from 'react';
 import {StyleSheet,Text,View,TouchableOpacity,ScrollView,} from 'react-native';
+import { Card } from 'react-native-elements';
 import BannerInPages from '../components/BannerInPages';
 import ImageOverlay from '../components/ImageOverlay';
 import Footer from '../components/Footer';
@@ -11,67 +12,34 @@ export default class Nosotros extends React.Component{
   }
   static navigationOptions = ({ navigation }) => ({
      title: ` ${navigation.state.params.user}`,
-     headerTintColor: '#a8cf45',
+     headerTintColor: '#3898EC',
    });
   render() {
      const { params } = this.props.navigation.state;
     return(
       <ScrollView>
-        <View style={styles.container}>
-          <Text style={styles.titulo}>Bienvenidos Mac Soporte </Text>
-
-          <Text style={styles.parrafo}>
-          Somos una empresa familiar que inició su historia en el campo de la importación de frutas premium
-          en el Valle del Cauca para el año de 1978.
-          </Text>
-
-          <Text style={styles.parrafo}>
-          Con una amplia trayectoria, nuestra compañía ha establecido los estándares de calidad de producto y
-          servicio  mediante la constante evolución técnica, el mejoramiento y la capacitación constante de nuestro
-          recurso humano, formando un equipo especializado que nos permite ofrecer las mejores frutas importadas a
-          través de una logística óptima, para llevar a nuestros clientes calidad y confianza en todos los aspectos.
-          </Text>
-
-          <Text style={styles.parrafo}>
-          Nuestros productos son importados directamente de los mejores países productores para ofrecer siempre lo mejor.
-          </Text>
-
-          <Text style={styles.parrafo}>
-          Con un portafolio que ofrece ocho frutas premium (manzanas, peras, duraznos, nectarinas, kiwis, uvas, cerezas
-          y ciruelas) con sus respectivas variedades, su compañía puede encontrar en nosotros un proveedor honesto y
-          dedicado que selecciona las frutas con estrictos estándares de calidad.
-          </Text>
-
-          <View style={styles.containerService}>
-            <Text style={styles.titulointerno}>
-              Informacion sobre Nosotros
+          <Card title="Bienvenidos Mac Soporte" style={styles.container}>
+            <Text style={styles.parrafo}>
+            Somos una empresa familiar que inició su historia en el mantenimiento de equipos de Apple con una trayectoria
+            de mas de 12 años.
             </Text>
+
+            <Text style={styles.parrafo}>
+            Con una amplia trayectoria, nuestra compañía ha establecido los estándares de calidad de producto y
+            servicio  mediante la constante evolución técnica, el mejoramiento y la capacitación constante de nuestro
+            recurso humano, formando un equipo especializado que nos permite ofrecer el mejor servicio posible.
+            </Text>
+
+            <Text style={styles.parrafo}>
+            En Mac Soporte tambien ofrecemos ademas del mantenimiento preventivo y correctivo de los equipos de Apple, un amplio servicio
+            de asesoramiento para que seas uno con tu equipo, tambien ofrecemos servicio Tecnico y Especializado en Mantenimiento de equipos
+            de Prepensa como Dolev, CTPs y Filmadoras.
+            </Text>
+          </Card>
+          <Card title="Informacion sobre Nosotros">
             <Text style={styles.parrafointerno}>
-              Importamos y distribuimos las frutas más frescas a través de almacenes de cadena en todo el
-              País fortaleciendo nuestros vínculos comerciales a través de los años son motivo de orgullo
-              para nuestra compañía. Estamos en todas las centrales mayoristas, supermercados de cadena y
-              supermercados independientes en todo el territorio nacional.
+              Aqui puedes encontrar informacion legal relacionada a Mac Soporte (NIT: 79.539.253-9).
             </Text>
-            <Text style={styles.parrafointerno}>
-              Descarga nuestro portafolio de servicios en formato PDF.
-            </Text>
-            <View style={styles.btncontainer}>
-              <TouchableOpacity
-                style={styles.buttonService}
-                onPress={() => this.props.navigation.navigate('Portafolio', { user: 'Portafolio 2017' })}>
-                  <Text>Portafolio</Text>
-              </TouchableOpacity>
-            </View>
-            <Text style={styles.parrafointerno}>
-              Descarga nuestros certificados de retención en la fuente, IVA e ICA.
-            </Text>
-            <View style={styles.btncontainer}>
-              <TouchableOpacity
-                style={styles.buttonService}
-                  onPress={() => this.props.navigation.navigate('Certificados', { user: ' Certificados de retención en la fuente, IVA e ICA.' })}>
-                  <Text>Certificados</Text>
-              </TouchableOpacity>
-            </View>
             <Text style={styles.parrafointerno}>
               Conoce nuestra Política de Privacidad.
             </Text>
@@ -83,8 +51,7 @@ export default class Nosotros extends React.Component{
               </TouchableOpacity>
             </View>
               <Text style={styles.parrafointerno}></Text>
-          </View>
-        </View>
+          </Card>
         <Footer/>
       </ScrollView>
     )
@@ -116,7 +83,6 @@ const styles = StyleSheet.create({
     fontSize:28,
     textAlign:'left',
     padding:10,
-    color:'#fff'
   },
   parrafo:{
     fontSize:18,
@@ -128,10 +94,9 @@ const styles = StyleSheet.create({
     fontSize:18,
     textAlign:'left',
     padding:20,
-    color:'#fff',
   },
   buttonService:{
-    backgroundColor: '#fff',
+    backgroundColor: '#3898EC',
     alignItems: 'center',
     justifyContent: 'center',
     borderRadius: 10,
