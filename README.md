@@ -12,7 +12,6 @@ Made a App with React Native for a company
 > - ../components/Title
 ----------
 ## Uso de Dependencias
-> **npm React:**
 > - react-native-vector-icons
 > - react-navigation
 > - react-native-elements
@@ -32,7 +31,8 @@ Made a App with React Native for a company
 > - ../pages/Soporte
 ----------
 ## Capturas Pantalla
-![HomeScreen](./src/img/screencapture/HomeScreen.png)
+#### HomeScreen
+![ ](./src/img/screencapture/HomeScreen.png)
 ----------
 ![Contactenos](./src/img/screencapture/Contactenos.png)
 ----------
@@ -42,7 +42,8 @@ Made a App with React Native for a company
 ----------
 ![Nosotros](./src/img/screencapture/Nosotros.png)
 ----------
-![Noticias](./src/img/screencapture/Noticias.png)
+#### Noticias
+![](./src/img/screencapture/Noticias.png)
 ----------
 ![Otros](./src/img/screencapture/Otros.png)
 ----------
