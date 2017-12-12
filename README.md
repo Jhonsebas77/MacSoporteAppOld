@@ -33,25 +33,33 @@ Made a App with React Native for a company
 ## Capturas Pantalla
 #### HomeScreen
 ![ ](./src/img/screencapture/HomeScreen.png)
-----------
-![Contactenos](./src/img/screencapture/Contactenos.png)
-----------
-![Garantia](./src/img/screencapture/Garantia.png)
-----------
-![Mapa](./src/img/screencapture/Mapa.png)
-----------
-![Nosotros](./src/img/screencapture/Nosotros.png)
-----------
+
+#### Contactenos
+![](./src/img/screencapture/Contactenos.png)
+
+#### Garantia
+![](./src/img/screencapture/Garantia.png)
+
+#### Mapa
+![](./src/img/screencapture/Mapa.png)
+
+#### Nosotros
+![](./src/img/screencapture/Nosotros.png)
+
 #### Noticias
 ![](./src/img/screencapture/Noticias.png)
-----------
-![Otros](./src/img/screencapture/Otros.png)
-----------
-![Preguntas](./src/img/screencapture/Preguntas.png)
-----------
-![Productos](./src/img/screencapture/Productos.png)
-----------
-![Servicios](./src/img/screencapture/Servicios.png)
-----------
-![Soporte](./src/img/screencapture/Soporte.png)
-----------
+
+#### Otros
+![](./src/img/screencapture/Otros.png)
+
+#### Preguntas
+![](./src/img/screencapture/Preguntas.png)
+
+#### Productos
+![](./src/img/screencapture/Productos.png)
+
+#### Servicios
+![](./src/img/screencapture/Servicios.png)
+
+#### Soporte
+![](./src/img/screencapture/Soporte.png)
