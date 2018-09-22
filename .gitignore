@@ -1,12 +1,18 @@
 .history
-
 # OSX
 #
 .DS_Store
-
+package-lock.json
+android/app/enviroment.json
+android/app/google-services.json
+android/app/src/main/assets/
+android/app/build/
+lib/
 # Xcode
 #
-lib/
+ios/
+ios/build/
+build/
 *.pbxuser
 !default.pbxuser
 *.mode1v3
@@ -23,6 +29,8 @@ DerivedData
 *.ipa
 *.xcuserstate
 project.xcworkspace
+package-lock.json
+yarn.lock
 
 # Android/IntelliJ
 #
@@ -37,6 +45,7 @@ local.properties
 node_modules/
 npm-debug.log
 yarn-error.log
+yarn.lock
 
 # BUCK
 buck-out/
@@ -54,8 +63,9 @@ buck-out/
 */fastlane/Preview.html
 */fastlane/screenshots
 
-# Bundle artifact
-*.jsbundle
+# Git iOS
 
-package-lock.json
-yarn.lock
+ios/Podfile.lock
+ios/Pods/Manifest.lock
+ios/Pods/GVRSDK/Libraries/libGVRSDK.a
+ios/Pods/Target Support Files/
